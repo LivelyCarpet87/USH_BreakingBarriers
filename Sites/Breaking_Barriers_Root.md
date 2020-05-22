@@ -1,6 +1,6 @@
 # Breaking Barriers
 
-| [Industry Changes](/BreakingBarriers/IndustryChanges) | [Societal Impact](/BreakingBarriers/SocietalImpact) |
-| ----------------------------------------------------- |:---------------------------------------------------:|
+| [Industry Changes](/BreakingBarriers/IndustryChanges.md) | [Societal Impact](/BreakingBarriers/SocietalImpact.md) |
+| -------------------------------------------------------- |:------------------------------------------------------:|
 
 
