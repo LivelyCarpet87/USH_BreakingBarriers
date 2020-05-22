@@ -4,5 +4,4 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/440px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg" title="" alt="Steve Jobs" data-align="center">
 
-| [Enter Site](/About_Steve_Jobs.md) |
-| ---------------------------------- |
+[Enter Site](/About_Steve_Jobs.html)
