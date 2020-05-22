@@ -38,5 +38,5 @@ Finally, there is the iPhone, a key to Apple's profit generation today. The iPho
 
 ---
 
-| [Previous](/Sites/Breaking_Barriers_Root.md) | [Next](/Sites/BreakingBarriers/SocietalImpact.md) |
-| -------------------------------------------- | ------------------------------------------------- |
+| [Back](/Sites/Breaking_Barriers_Root.md) | [Societal Impact](/Sites/BreakingBarriers/SocietalImpact.md) |
+| ---------------------------------------- | ------------------------------------------------------------ |

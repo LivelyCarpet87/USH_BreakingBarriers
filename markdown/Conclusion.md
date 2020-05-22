@@ -4,5 +4,5 @@ Arguably, Steve Jobs reshaped how our society functioned, forming the multitaski
 
 ---
 
-| [Previous](/Sites/BreakingBarriers/SocietalImpact.md) | [Next](/Sites/WorksCited.md) |
-| ----------------------------------------------------- | ---------------------------- |
+| [Breaking Barriers](/Sites/BreakingBarriers/SocietalImpact.md) | [Works Cited](/Sites/WorksCited.md) |
+| -------------------------------------------------------------- | ----------------------------------- |

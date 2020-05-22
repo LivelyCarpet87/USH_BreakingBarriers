@@ -32,7 +32,7 @@ Another notable change would be the effects of the smartphones on us. The averag
 
 ---
 
-| [Previous](/Sites/BreakingBarriers/IndustryChanges.md) | [Next](/Sites/Conclusion.md) |
-| ------------------------------------------------------ | ---------------------------- |
+| [Back](/Sites/BreakingBarriers/IndustryChanges.md) | [Industry Changes](/Sites/Conclusion.md) |
+| -------------------------------------------------- | ---------------------------------------- |
 
 
