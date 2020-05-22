@@ -30,4 +30,9 @@ Another notable change would be the effects of the smartphones on us. The averag
 
 - Entertainment
 
+---
+
+| [Previous](/Sites/BreakingBarriers/IndustryChanges.md) | [Next](/Sites/Conclusion.md) |
+| ------------------------------------------------------ | ---------------------------- |
+
 
