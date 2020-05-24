@@ -2,11 +2,11 @@
 
 In 1984, Apple introduced the Apple II, a revolutionary computer created by Steve Jobs and Steve Wozniak. The computer shattered the barrier of technical complexity barricading the average person from using a computer by:
 
-- implementing a graphical user interface
+- implementing a graphical user interface (Computer Closet Collection)
 
-- implementing a keyboard
+- implementing a keyboard (Computer Closet Collection)
 
-- pre-installing the computer with necessary programs
+- pre-installing the computer with necessary programs (Molloy)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2zfqw8nhUwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -32,8 +32,7 @@ Before Apple I and the Apple II, computers were very difficult to use. As stated
 
 Eventually, because the GUI was more intuitive and efficient, it became an industry standard like it is today. 
 
-| <img title="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Bundesarchiv_B_145_Bild-F077948-0006%2C_Jugend-Computerschule_mit_IBM-PC.jpg/600px-Bundesarchiv_B_145_Bild-F077948-0006%2C_Jugend-Computerschule_mit_IBM-PC.jpg" alt="IBM" width="432" data-align="center"> | <img title="" src="https://i.insider.com/560a92f4dd089545578b468a?width=1300&format=jpeg&auto=webp" alt="1998 iMac" width="394" data-align="center"> | <img title="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Powerbook_100_pose.jpg/600px-Powerbook_100_pose.jpg" alt="PowerBook 100" width="287" data-align="center"> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+![Introducing the Apple II Ad](http://www.computercloset.org/AppleIIIntroAd.jpg)
 
 ---
 

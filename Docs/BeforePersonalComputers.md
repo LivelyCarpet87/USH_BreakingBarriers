@@ -2,7 +2,7 @@
 
 ## Background
 
-Older computers had 8-bit binary memory, with addresses stored to as octal numbers. They accepted input through a series of on/off switches and gave output through an array of LED lights. To use a computer, people needed to be adept at understanding memory addresses, memorizing binary opcodes, comprehending boolean algebra (AND, OR, NOT, NAND, NOR), and translating between decimal, octal, and binary systems. 
+Older computers had 8-bit binary memory, with addresses stored to as octal numbers. They accepted input through a series of on/off switches and gave output through an array of LED lights. To use a computer, people needed to be adept at understanding memory addresses, memorizing binary opcodes, comprehending boolean algebra (AND, OR, NOT, NAND, NOR), and translating between decimal, octal, and binary systems. (Altair Manual)
 
 ![Boolean Logic in Altair 8800 Operator's Manual](https://raw.githubusercontent.com/LivelyCarpet87/USH_BreakingBarriers/Sites/images/LogicGates.png "Boolean Logic")
 
@@ -16,7 +16,7 @@ Before the personal computer was popularized, computers were not designed with t
 
 ### 1. Program Design
 
-For example, the command for numerical addition (which assumes the user inputs the numbers before execution), known as "ADD" or "+", consists of the following opcodes:
+For example, the command for numerical addition (which assumes the user inputs the numbers before execution), known as "ADD" or "+", consists of the following opcodes (Altair Manual 33):
 
 1. LDA (Load the data in the address the pointer is at to RAM)
 
@@ -54,7 +54,7 @@ According to the Altair 8800 Operator's manual, to create a such program on the 
 
 ### 3. Execution
 
-After the above steps had been done correctly, the program was only entered into memory. Then the user had to call on the program to use it. In order to do so, the user needs to:
+After the above steps had been done correctly, the program was only entered into memory. Then the user has to call on the program to use it. In order to do so, the user needs to (Altair Manual 38):
 
 1. Input the numbers to the input addresses, toggling switches for a total of 34 times
 
@@ -76,10 +76,10 @@ After the above steps had been done correctly, the program was only entered into
 
 Clearly, the older computers, with interfaces like the Altair 8800 were designed for advanced users who had a deep grasp on the subject, and its complex usage would likely confuse people without extensive training or experience. Its largest barriers to use in the general public were:
 
-- Requiring the user to memorize a significant portion of a total of 255 different opcodes or constantly refer to a [manual](http://www.emulator101.com/reference/8080-by-opcode.html)
+- Requiring the user to memorize a significant portion of a total of 255 different opcodes (Intel 8080 Instruction Set) or constantly refer to a manual
 
-- Slow to use because of the numerous steps necessary to do simple tasks
+- Slow to use because of the numerous steps necessary to do simple tasks as demonstrated above
 
-- Required heavy amounts of math to translate input and output
+- Required heavy amounts of math to translate input and output as demonstrated above
 
-- Nothing came pre-installed
+- Nothing came pre-installed because it was sold with empty memory cards
