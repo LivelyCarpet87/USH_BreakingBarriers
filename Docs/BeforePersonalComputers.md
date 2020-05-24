@@ -10,7 +10,9 @@ Older computers had 8-bit binary memory, with addresses stored to as octal numbe
 
 ## Actual Usage
 
-Before the personal computer was popularized, computers were not designed with the average person in mind. On these older computers, commands did not exist by 
+Before the personal computer was popularized, computers were not designed with the average person in mind. On these older computers, commands did not exist. What we think of commands like copy and paste were in reality programs composed of opcodes that had to be made. The computer interface was a panel of switches and lights that required specially formatted user input. 
+
+![Front of Altair 8800](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/MITS_Altair_8800_Front_Panel.jpg/1598px-MITS_Altair_8800_Front_Panel.jpg)
 
 ### 1. Program Design
 
@@ -36,17 +38,19 @@ According to the Altair 8800 Operator's manual, to create a such program on the 
    
    1. The user needed to find the binary opcode from their memory or the manual. For example, "11 000 011" represents the "JMP", or jump. 
    
-   2. The user enters the opcode by flicking a row of 8 switches (ON for 1, OFF for 0). In continuation of the previous example, the "JMP" opcode requires the user to set the row of 8 switches to ON,ON,OFF,OFF,OFF,OFF,ON,ON. 
+   ![Opcodes](https://raw.githubusercontent.com/LivelyCarpet87/USH_BreakingBarriers/Sites/images/Intel8080Instructions.png)
    
-   3. The user flicks the "DEPOSIT NEXT" switch to load this command into memory. 
+   1. The user enters the opcode by flicking a row of 8 switches (ON for 1, OFF for 0). In continuation of the previous example, the "JMP" opcode requires the user to set the row of 8 switches to ON,ON,OFF,OFF,OFF,OFF,ON,ON. 
    
-   4. If the command involves a memory address:
+   2. The user flicks the "DEPOSIT NEXT" switch to load this command into memory. 
+   
+   3. If the command involves a memory address:
       
       1. the user has to translate the address from octal to binary, such as from "2 0 2" to "10 000 010"
       
       2. The user enters this memory address by flicking a row of 8 switches to ON,OFF,OFF,OFF,OFF,OFF,ON,OFF to represent the memory address in binary for the previously entered command to reference.
    
-   5. The user repeats steps 1 to 4 for ALL the opcodes. For reference, a simple addition program requires 5 opcodes, and a total of  14 entries to load into memory. 
+   4. The user repeats steps 1 to 4 for ALL the opcodes. For reference, a simple addition program requires 5 opcodes, and a total of  14 entries to load into memory. 
 
 ### 3. Execution
 
@@ -61,6 +65,10 @@ After the above steps had been done correctly, the program was only entered into
 4. Results will be displayed on the row of LED lights in binary format, with lights ON for 1 and OFF for 0. 
 
 5. The user copies down the binary output and is required to translate the binary output back to decimal.  
+
+> "If a listener nods his head when you're explaining your program, wake him up. "
+> 
+> -- FreeBSD Fortune Database
 
 ---
 
