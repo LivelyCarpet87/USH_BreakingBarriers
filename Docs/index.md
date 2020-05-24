@@ -4,5 +4,4 @@
 
 <img title="" src="http://ids.si.edu/ids/deliveryService?id=NMAH-91-14186&max=1000" alt="Apple II" width="537">
 
-| [Enter Site](/Sites/About_Steve_Jobs.md) |
-| ---------------------------------------- |
+[Enter Site](/Sites/About_Steve_Jobs.md)
