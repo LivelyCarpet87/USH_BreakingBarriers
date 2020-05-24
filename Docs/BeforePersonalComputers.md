@@ -4,11 +4,13 @@
 
 Older computers had 8-bit binary memory, with addresses stored to as octal numbers. They accepted input through a series of on/off switches and gave output through an array of LED lights. To use a computer, people needed to be adept at understanding memory addresses, memorizing binary opcodes, comprehending boolean algebra (AND, OR, NOT, NAND, NOR), and translating between decimal, octal, and binary systems. 
 
+![Boolean Logic in Altair 8800 Operator's Manual](https://raw.githubusercontent.com/LivelyCarpet87/USH_BreakingBarriers/Sites/images/LogicGates.png "Boolean Logic")
+
 ---
 
 ## Actual Usage
 
-Before the personal computer was popularized, computers were not designed with the average person in mind. On these older computers, commands did not exist by default. What we call commands today were binary programs consisting of opcodes that had to be manually programmed into the computer by programmers. 
+Before the personal computer was popularized, computers were not designed with the average person in mind. On these older computers, commands did not exist by 
 
 ### 1. Program Design
 
