@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  body {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+  }
+
+  .fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  }
+
+  .crawl {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+  }
+
+  .crawl > .title {
+    font-size: 90%;
+    text-align: center;
+  }
+
+  .crawl > .title h1 {
+    margin: 0 0 100px;
+    text-transform: uppercase;
+  }
+
+  @keyframes crawl {
+    0% {
+      top: 0;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% {
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="fade"></div>
+
+<section class="star-wars">
+
+  <div class="crawl">
+  <article class="markdown-body"><h1 class="atx" id="works-cited">Works Cited</h1>
+    <p><em>Altair 8800 Operator's Manual</em>. MITS, 1975.</p>
+    <p><a href="https://www.landsnail.com/a2ref3.htm">https://www.landsnail.com/a2ref3.htm</a></p>
+    <p>“Computer Closet Collection.” <em>Apple II</em>, Computercloset.org, 13 Apr. 2003, <a href="http://www.computercloset.org/apple2.htm">www.computercloset.org/apple2.htm</a>.</p>
+    <p>File, Thom. “Computer and Internet Use in the United States.” <em>Computer and Internet Use in the United States</em>, US Census Bureau, May 2013, <a href="http://www.census.gov/prod/2013pubs/p20-569.pdf">www.census.gov/prod/2013pubs/p20-569.pdf</a>.</p>
+    <p>“Intel 8080 Instruction Set.” <em>Intel 8080 OPCODES</em>, 2020, pastraiser.com/cpu/i8080/i8080_opcodes.html.</p>
+    <p>Ken, Arnold. <em>Fortune Database</em>. 10.0, The FreeBSD Project, 27 November, 2014</p>
+    <p>Molloy, Andy. “Apple II Programmer's Reference.” <em>Apple II Programmer's Reference: DOS 3.3 Commands</em>, Landsnail.com, 7 July 2009, <a href="http://www.landsnail.com/a2ref3.htm">www.landsnail.com/a2ref3.htm</a>.</p>
+    <p>Myles, Tony. “What Is the Importance of Computer Technology in Everyday Life?” <em>Techwalla</em>, Techwalla, 20 Sept. 2018, <a href="http://www.techwalla.com/articles/what-is-the-importance-of-computer-technology-in-everyday-life">www.techwalla.com/articles/what-is-the-importance-of-computer-technology-in-everyday-life</a>.</p>
+    <p>Watson, Allen. <em>Apple II Reference Manual</em>. Apple Computer, 1982.</p>
+  </div>
+</section>
+<script>
+function redirect(){
+  window.location.href = "https://livelycarpet87.github.io/USH_BreakingBarriers/WorksCited.html";
+}
+setTimeout(redirect, 65000)
+</script>
+</article>
+</body>
+</html>
