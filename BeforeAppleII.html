@@ -1374,6 +1374,44 @@ p:not(.ag-active)[data-role="hr"]::before {
   transform: translateX(-50%) translateY(-50%);
 }
 </style>
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+
 </head>
 <body>
   <article class="markdown-body"><h1 class="atx" id="before-apple-ii">Before Apple II</h1>
@@ -1382,9 +1420,16 @@ p:not(.ag-active)[data-role="hr"]::before {
 <p><img title="Boolean Logic" alt="Boolean Logic in Altair 8800 Operator's Manual" src="https://raw.githubusercontent.com/LivelyCarpet87/USH_BreakingBarriers/Sites/images/LogicGates.png"></p>
 <hr>
 <h2 class="atx" id="actual-usage">Actual Usage</h2>
-<p>Before the personal computer was popularized, computers were not designed with the average person in mind. On these older computers, commands did not exist. What we think of commands like copy and paste were in reality programs composed of opcodes that had to be made. The computer interface was a panel of switches and lights that required specially formatted user input. </p>
+<p>Before the personal computer was popularized, computers were not designed with the average person in mind. On these older computers, commands did not exist. What we think of commands like copy and paste were in reality programs composed of opcodes that had to be made. The computer interface was a panel of ON/OFF switches and LED lights that required input formated in a special way. The use of such an interface required the user to be proficient in all the areas above to comprehend and translate it. The following is a simplified version of the explanation and shows just how difficult it is to grasp. </p>
 <p><img alt="Front of Altair 8800" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/MITS_Altair_8800_Front_Panel.jpg/1598px-MITS_Altair_8800_Front_Panel.jpg"></p>
-<h3 class="atx" id="1-program-design">1. Program Design</h3>
+<p></p>
+<blockquote>
+<p>"If a listener nods his head when you're explaining your program, wake him up. "</p>
+<p>-- FreeBSD Fortune Database</p>
+</blockquote>
+
+<button class="collapsible">1. Program Design</button>
+<div class="content">
 <p>For example, the command for numerical addition (which assumes the user inputs the numbers before execution), known as "ADD" or "+", consists of the following opcodes (Altair Manual 33):</p>
 <ol>
 <li><p>LDA (Load the data in the address the pointer is at to RAM)</p>
@@ -1398,7 +1443,9 @@ p:not(.ag-active)[data-role="hr"]::before {
 <li><p>STA (Store result in new memory address)</p>
 </li>
 </ol>
-<h3 class="atx" id="2-coding">2. Coding</h3>
+</div>
+<button class="collapsible">2. Creating Programs To Use</button>
+<div class="content">
 <p>According to the Altair 8800 Operator's manual, to create a such program on the computer, the user needed to:</p>
 <ol>
 <li><p>reset the pointer by flicking the "RESET" switch</p>
@@ -1426,7 +1473,9 @@ p:not(.ag-active)[data-role="hr"]::before {
 </ol>
 </li>
 </ol>
-<h3 class="atx" id="3-execution">3. Execution</h3>
+</div>
+<button class="collapsible">3. Program Execution</button>
+<div class="content">
 <p>After the above steps had been done correctly, the program was only entered into memory. Then the user has to call on the program to use it. In order to do so, the user needs to (Altair Manual 38):</p>
 <ol>
 <li><p>Input the numbers to the input addresses, toggling switches for a total of 34 times</p>
@@ -1440,10 +1489,24 @@ p:not(.ag-active)[data-role="hr"]::before {
 <li><p>The user copies down the binary output and is required to translate the binary output back to decimal.  </p>
 </li>
 </ol>
-<blockquote>
-<p>"If a listener nods his head when you're explaining your program, wake him up. "</p>
-<p>-- FreeBSD Fortune Database</p>
-</blockquote>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 <hr>
 <h2 class="atx" id="issues">Issues</h2>
 <p>Clearly, the older computers, with interfaces like the Altair 8800 were designed for advanced users who had a deep grasp on the subject, and its complex usage would likely confuse people without extensive training or experience. Its largest barriers to use in the general public were:</p>
