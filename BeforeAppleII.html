@@ -1412,8 +1412,103 @@ p:not(.ag-active)[data-role="hr"]::before {
 }
 </style>
 
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+}
+</style>
 </head>
 <body>
+  <ul>
+  <li><a href="/USH_BreakingBarriers/index.html">Home</a></li>
+
+  <li><a href="/USH_BreakingBarriers/Thesis.html">Thesis</a></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Before Apple II</a>
+    <div class="dropdown-content">
+      <a href="/USH_BreakingBarriers/BeforeAppleII.html#background">Background</a>
+      <a href="/USH_BreakingBarriers/BeforeAppleII.html#actual-usage">Actual Usuage</a>
+      <a href="/USH_BreakingBarriers/BeforeAppleII.html#issues">Issues</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Changes After Apple II</a>
+    <div class="dropdown-content">
+      <a href="/USH_BreakingBarriers/IndustryChanges.html">Changes After Apple II</a>
+      <a href="/USH_BreakingBarriers/IndustryChanges.html#runs-out-the-box">Runs Out the Box</a>
+      <a href="/USH_BreakingBarriers/IndustryChanges.html#standardization-of-the-gui">Standardization of the GUI</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Legacy</a>
+    <div class="dropdown-content">
+      <a href="/USH_BreakingBarriers/Legacy.html#integration-of-tech">Integration of Tech</a>
+      <a href="/USH_BreakingBarriers/Legacy.html#social-media">Social Media</a>
+    </div>
+  </li>
+
+  <li><a href="/USH_BreakingBarriers/Conclusion.html">Conclusion</a></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Works Cited</a>
+    <div class="dropdown-content">
+      <a href="/USH_BreakingBarriers/FunWorksCited.html">Animated Version</a>
+      <a href="/USH_BreakingBarriers/WorksCited.html">Unanimated Version</a>
+    </div>
+  </li>
+
+</ul>
+
   <article class="markdown-body"><h1 class="atx" id="before-apple-ii">Before Apple II</h1>
 <h2 class="atx" id="background">Background</h2>
 <p>Older computers had 8-bit binary memory, with addresses stored to as octal numbers. They accepted input through a series of on/off switches and gave output through an array of LED lights. To use a computer, people needed to be adept at understanding memory addresses, memorizing binary opcodes, comprehending boolean algebra (AND, OR, NOT, NAND, NOR), and translating between decimal, octal, and binary systems. (Altair Manual)</p>
@@ -1520,7 +1615,7 @@ for (i = 0; i < coll.length; i++) {
 <li><p>Nothing came pre-installed because it was sold with empty memory cards</p>
 </li>
 </ul>
-<p><a href="https://livelycarpet87.github.io/USH_BreakingBarriers/Thesis.html">&larr; Thesis</a> | <a href="https://livelycarpet87.github.io/USH_BreakingBarriers/IndustryChanges.html">Industry Changes After Apple II &rarr;</a></p>
+<p style="text-align:center"><a href="https://livelycarpet87.github.io/USH_BreakingBarriers/Thesis.html">&larr; Thesis</a> | <a href="https://livelycarpet87.github.io/USH_BreakingBarriers/IndustryChanges.html">Industry Changes After Apple II &rarr;</a></p>
 </article>
 </body>
 </html>
