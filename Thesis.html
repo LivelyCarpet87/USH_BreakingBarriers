@@ -1373,12 +1373,105 @@ p:not(.ag-active)[data-role="hr"]::before {
   border-bottom: 2px dashed var(--editorColor50);
   transform: translateX(-50%) translateY(-50%);
 }
+</style>
+<style>
 p {
  text-align:center
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
 </head>
 <body>
+  <ul>
+  <li><a href="#home">Home</a></li>
+
+  <li><a href="#news">Thesis</a></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Before Apple II</a>
+    <div class="dropdown-content">
+      <a href="#">Background</a>
+      <a href="#">Actual Usuage</a>
+      <a href="#">Issues</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Changes After Apple II</a>
+    <div class="dropdown-content">
+      <a href="#">Runs Out the Box</a>
+      <a href="#">Standardization of the GUI</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Legacy</a>
+    <div class="dropdown-content">
+      <a href="#">Integration of Tech</a>
+      <a href="#">Social Media</a>
+    </div>
+  </li>
+
+  <li><a href="#news">Conclusion</a></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Works Cited</a>
+    <div class="dropdown-content">
+      <a href="#">Animated Version</a>
+      <a href="#">Unanimated Version</a>
+    </div>
+  </li>
+    
+</ul>
   <article class="markdown-body"><h1 class="atx" id="thesis">Thesis</h1>
 <p><img width="665" alt="Apple II Advertisement" title="" src="https://cdn.vox-cdn.com/thumbor/PE1sXcVBOc4mQxxy9lykiN6kkng=/5x0:635x420/1820x1213/filters:focal(5x0:635x420):format(webp)/cdn.vox-cdn.com/assets/1063712/44077527.jpg"></p>
 
