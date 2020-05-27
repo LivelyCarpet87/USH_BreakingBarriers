@@ -1448,6 +1448,23 @@ p:not(.ag-active)[data-role="hr"]::before {
   color: black;
 }
 
+
+.dropdown .dropbtnActive {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #0C8BBA;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtnActive {
+  background-color: #ddd;
+  color: black;
+}
+
 .navbar a.active {
     background-color: #0C8BBA;
     color: white;
@@ -1485,7 +1502,7 @@ p:not(.ag-active)[data-role="hr"]::before {
     <a href="/USH_BreakingBarriers/index.html">Home</a>
     <a href="/USH_BreakingBarriers/Thesis.html">Thesis</a>
     <div class="dropdown">
-      <button class="dropbtn">Before Apple II
+      <button class="dropbtnActive">Before Apple II
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
