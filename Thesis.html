@@ -1407,7 +1407,13 @@ p:not(.ag-active)[data-role="hr"]::before {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #0C8BBA;
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+    background-color: #0C8BBA;
+    color: white;
 }
 
 .dropdown-content {
@@ -1441,7 +1447,7 @@ p:not(.ag-active)[data-role="hr"]::before {
 
   <div class="navbar">
     <a href="/USH_BreakingBarriers/index.html">Home</a>
-    <a href="/USH_BreakingBarriers/Thesis.html">Thesis</a>
+    <a class="active" href="/USH_BreakingBarriers/Thesis.html">Thesis</a>
     <div class="dropdown">
       <button class="dropbtn">Before Apple II
         <i class="fa fa-caret-down"></i>
