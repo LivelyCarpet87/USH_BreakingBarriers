@@ -1455,3 +1455,12 @@ display: block;
     text-decoration:none;
     color:black;
 }
+
+//For iFrames
+iframe {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #777;
+    display:block;
+}
