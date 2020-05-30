@@ -1462,3 +1462,10 @@ iframe {
     background-color: #777;
     display:block;
 }
+
+//sticky
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
