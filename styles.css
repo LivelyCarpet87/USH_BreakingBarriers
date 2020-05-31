@@ -534,8 +534,6 @@ padding: 0;
 }
 
 .markdown-body blockquote {
-border-left: .25em solid #dfe2e5;
-color: #6a737d;
 padding: 0 1em;
 }
 
@@ -1381,7 +1379,7 @@ iframe {
 }
 
 //For Buttons
-.button {
+.button2 {
   background-color: #0C8BBA; /* Blue */
   border: none;
   color: white;
@@ -1390,4 +1388,9 @@ iframe {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+// for blockquote
+blockquote {
+    border-left: 5px solid #0C8BBA;
+    background-color: #dfe2e5;
 }
