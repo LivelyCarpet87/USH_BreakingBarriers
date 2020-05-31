@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <style>
+  <style>
   //collapsible content
   .collapsible {
     background-color: #eee;
@@ -31,8 +32,17 @@
     background-color: #f1f1f1;
   }
   </style>
+
   <style>
-  //navbar
+
+  //sticky
+  div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  </style>
+  <style>
   .navbar {
   overflow: hidden;
   background-color: #333;
@@ -118,6 +128,7 @@
 <link rel="stylesheet" type="text/css" href="/USH_BreakingBarriers/styles.css" media="screen" />
 </head>
 <body>
+  <div class="sticky">
   <div class="navbar">
     <a href="/USH_BreakingBarriers/index.html">Home</a>
     <a class="active" href="/USH_BreakingBarriers/Thesis.html">Thesis</a>
@@ -176,8 +187,119 @@
       </div>
     </div>
   </div>
-  <article class="markdown-body"><h1 class="atx" id="before-apple-ii">Before Apple II</h1>
+</div>
+  <article class="markdown-body"><h1 class="atx" id="industry-changes">After The Apple II</h1>
+    <h2 class="atx" id="background">Background</h2>
+    <p>Older computers had 8-bit binary memory, with addresses stored as octal numbers. They accepted input through a series of on/off switches and gave output through an array of LED lights. To use a computer, people needed to be adept at understanding memory addresses, memorizing binary opcodes, comprehending boolean algebra (AND, OR, NOT, NAND, NOR), and translating between decimal, octal, and binary systems. (Altair Manual)</p>
+    <p><img title="Boolean Logic" alt="Boolean Logic in Altair 8800 Operator's Manual" src="https://raw.githubusercontent.com/LivelyCarpet87/USH_BreakingBarriers/Sites/images/LogicGates.png"></p>
+    <hr>
+    <h2 class="atx" id="actual-usage">Actual Usage</h2>
+    <p>Before the personal computer was popularized, computers were not designed with the average person in mind. On these older computers, commands did not exist. What we think of commands like copy and paste were in reality programs composed of opcodes that had to be made. The computer interface was a panel of ON/OFF switches and LED lights that required input formated in a special way. The use of such an interface required the user to be proficient in all the areas above to comprehend and translate it. The following is a simplified version of the explanation and shows just how difficult it is to grasp. </p>
+    <div class="images">
+      <a>
+        <img alt="Front of Altair 8800" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/MITS_Altair_8800_Front_Panel.jpg/1598px-MITS_Altair_8800_Front_Panel.jpg">
+        <div class="caption"> The interface of Altair 8800 was a panel of lights and switches</div>
+      </a>
+    </div>
+    <p></p>
+    <blockquote>
+    <p>"If a listener nods his head when you're explaining your program, wake him up. "</p>
+    <p>-- FreeBSD Fortune Database</p>
+    </blockquote>
 
-</article>
+    <button class="collapsible">1. Program Design</button>
+    <div class="content">
+    <p>For example, the command for numerical addition (which assumes the user inputs the numbers before execution), known as "ADD" or "+", consists of the following opcodes (Altair Manual 33):</p>
+    <ol>
+    <li><p>LDA (Load the data in the address the pointer is at to RAM)</p>
+    </li>
+    <li><p>MOV (Move the pointer to the second address)</p>
+    </li>
+    <li><p>LDA (LoaD the number in current Address)</p>
+    </li>
+    <li><p>ADD (Adding 2 numbers stored in the two 2 addresses)</p>
+    </li>
+    <li><p>STA (Store result in new memory address)</p>
+    </li>
+    </ol>
+    </div>
+    <button class="collapsible">2. Creating Programs To Use</button>
+    <div class="content">
+    <p>According to the Altair 8800 Operator's manual, to create a such program on the computer, the user needed to:</p>
+    <ol>
+    <li><p>reset the pointer by flicking the "RESET" switch</p>
+    </li>
+    <li><p>Enter ALL the opcodes manually. To enter each opcode:</p>
+    <ol>
+    <li>The user needed to find the binary opcode from their memory or the manual. For example, "11 000 011" represents the "JMP", or jump. </li>
+    </ol>
+    <p><img alt="Opcodes" src="https://raw.githubusercontent.com/LivelyCarpet87/USH_BreakingBarriers/Sites/images/Intel8080Instructions.png"></p>
+    <ol>
+    <li><p>The user enters the opcode by flicking a row of 8 switches (ON for 1, OFF for 0). In continuation of the previous example, the "JMP" opcode requires the user to set the row of 8 switches to ON,ON,OFF,OFF,OFF,OFF,ON,ON. </p>
+    </li>
+    <li><p>The user flicks the "DEPOSIT NEXT" switch to load this command into memory. </p>
+    </li>
+    <li><p>If the command involves a memory address:</p>
+    <ol>
+    <li><p>the user has to translate the address from octal to binary, such as from "2 0 2" to "10 000 010"</p>
+    </li>
+    <li><p>The user enters this memory address by flicking a row of 8 switches to ON,OFF,OFF,OFF,OFF,OFF,ON,OFF to represent the memory address in binary for the previously entered command to reference.</p>
+    </li>
+    </ol>
+    </li>
+    <li><p>The user repeats steps 1 to 4 for ALL the opcodes. For reference, a simple addition program requires 5 opcodes, and a total of  14 entries to load into memory. </p>
+    </li>
+    </ol>
+    </li>
+    </ol>
+    </div>
+    <button class="collapsible">3. Program Execution</button>
+    <div class="content">
+    <p>After the above steps had been done correctly, the program was only entered into memory. Then the user has to call on the program to use it. In order to do so, the user needs to (Altair Manual 38):</p>
+    <ol>
+    <li><p>Input the numbers to the input addresses, toggling switches for a total of 34 times</p>
+    </li>
+    <li><p>Toggle the "RESET", then "RUN", then "STOP" switches</p>
+    </li>
+    <li><p>Set the "DATA/ADDRESSES" switches to go to the output address and "EXAMINE"</p>
+    </li>
+    <li><p>Results will be displayed on the row of LED lights in binary format, with lights ON for 1 and OFF for 0. </p>
+    </li>
+    <li><p>The user copies down the binary output and is required to translate the binary output back to decimal.  </p>
+    </li>
+    </ol>
+    </div>
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+    <hr>
+    <h2 class="atx" id="issues">Issues</h2>
+    <p>Clearly, the older computers, with interfaces like the Altair 8800 were designed for advanced users who had a deep grasp on the subject, and its complex usage would likely confuse people without extensive training or experience. Its largest barriers to use in the general public were:</p>
+    <ul>
+    <li><p>Requiring the user to memorize a significant portion of a total of 255 different opcodes (Intel 8080 Instruction Set) or constantly refer to a manual</p>
+    </li>
+    <li><p>Slow to use because of the numerous steps necessary to do simple tasks as demonstrated above</p>
+    </li>
+    <li><p>Required heavy amounts of math to translate input and output as demonstrated above</p>
+    </li>
+    <li><p>Nothing came pre-installed because it was sold with empty memory cards</p>
+    </li>
+    </ul>
+    <p style="text-align:center"><a href="https://livelycarpet87.github.io/USH_BreakingBarriers/Thesis.html">&larr; Thesis</a> | <a href="https://livelycarpet87.github.io/USH_BreakingBarriers/IndustryChanges.html">Industry Changes After Apple II &rarr;</a></p>
+  </article>
 </body>
 </html>
