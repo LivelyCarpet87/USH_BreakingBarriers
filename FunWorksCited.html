@@ -67,7 +67,7 @@
 </style>
 </head>
 <body>
-  <audio controls autoplay>
+  <audio id="myAudio" controls>
   <source src="https://livelycarpet87.github.io/USH_BreakingBarriers/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg">
 </audio>
   <div class="fade"></div>
@@ -121,10 +121,15 @@
   </div>
 </section>
 <script>
+function autoplay(){
+  x.autoplay = true;
+  x.load();
+}
 function redirect(){
   window.location.href = "https://livelycarpet87.github.io/USH_BreakingBarriers/WorksCited.html";
 }
-setTimeout(redirect, 51000)
+setTimeout(autoplay, 100)
+setTimeout(redirect, 45000)
 </script>
 </article>
 </body>
