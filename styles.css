@@ -1362,8 +1362,9 @@ transform: translateX(-50%) translateY(-50%);
 
 //for images and captions
 .images {
-    text-align:center;
-    margin:50px auto;
+  left: 50%;
+  top: 50%;
+  margin:50px auto;
 
 }
 .images a{
