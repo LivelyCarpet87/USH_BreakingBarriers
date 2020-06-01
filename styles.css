@@ -1365,13 +1365,15 @@ transform: translateX(-50%) translateY(-50%);
   left: 50%;
   top: 50%;
   margin:50px auto;
-
 }
 .images a{
     margin:0px 20px;
     display:inline-block;
     text-decoration:none;
     color:black;
+}
+div.caption {
+  text-align: center;
 }
 
 //For iFrames
